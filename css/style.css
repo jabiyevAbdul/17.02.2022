@@ -1,0 +1,130 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .container2 {
+  width: 95%;
+  margin: auto;
+}
+
+.header .container2 .logo {
+  width: 10%;
+}
+
+.header .container2 .menu ul li a {
+  text-decoration: none;
+  padding: 25px;
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+.header .container2 .menu ul li.home {
+  position: relative;
+}
+
+.header .container2 .menu ul li.home:hover .home-menu {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.header .container2 .menu ul li.home .home-menu {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+  background-color: white;
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  left: -25%;
+}
+
+.header .container2 .menu ul li.home .home-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container2 .menu ul li.home .home-menu li a {
+  padding: 10px;
+  color: black;
+}
+
+.header .container2 .menu ul li.home .home-menu li i {
+  padding: 15px 20px;
+  text-align: end;
+}
+
+.header .container2 .menu ul li.home .home-menu li.about {
+  position: relative;
+}
+
+.header .container2 .menu ul li.home .home-menu li.about:hover .mini-port {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.header .container2 .menu ul li.home .home-menu li.about .mini-port {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px);
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 120px;
+  height: 250px;
+  background-color: white;
+}
+
+.header .container2 .right-menu {
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.header .container2 .right-menu i {
+  padding: 10px;
+}
+
+.create {
+  width: 100%;
+  height: 100vh;
+  background: url(../photo/home-startup-slider-bg-03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.create .overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+/*# sourceMappingURL=style.css.map */
